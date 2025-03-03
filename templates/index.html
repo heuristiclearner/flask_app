@@ -1,48 +1,39 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Form</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: black;
-        }
-        .a{
-            border: 2px solid yellowgreen;
-            padding: 10px;
-            text-align: center;
-            margin: auto;
-            width: 200px;
-            background-color: lightgrey;
-            
-            
-    
-        }
-        
-        
-        .b input{
-            background-color: lightsteelblue;
-        }
-    </style>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="a">
-    <form class="b" method="get" autocomplete="on">
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="fname" value="Chiru"><br><br>
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lname" value="Goli"><br><br>
-        <label for="addr">Address:</label>
-        <input type="text" id="addr" name="address" value="..."><br><br>
-        <input type="submit" value="Submit">
-    </form>
-</div>
-    
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="myform">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <span class="error-message"></span>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+                <span class="error-message"></span>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                <span class="error-message"></span>
+            </div>
+            <div class="input-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword">
+                <span class="error-message"></span>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="intro.js"></script>
 </body>
 </html>
